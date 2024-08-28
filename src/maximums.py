@@ -14,4 +14,3 @@ def max_of_three(x, y, z):
     else:
         return z
 
-
