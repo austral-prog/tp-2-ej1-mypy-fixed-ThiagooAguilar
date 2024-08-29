@@ -1,4 +1,3 @@
-# Replace the "ANSWER HERE" for your answer
 def main(year : int):
     if (year % 4 == 0):
         if (year % 100 == 0):
