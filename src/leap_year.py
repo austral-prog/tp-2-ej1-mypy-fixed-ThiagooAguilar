@@ -1,5 +1,5 @@
 # Replace the "ANSWER HERE" for your answer
-def is_leap_year(year : int):
+def main(year : int):
     if (year % 4 == 0):
         if (year % 100 == 0):
             if (year % 400 == 0):
@@ -11,8 +11,11 @@ def is_leap_year(year : int):
     else:
         return False
 
-def main():
-    año: int= int(input("Ingrese un año: "))
-    is_leap = is_leap_year(año)
-    print(f"El año {año} es {'bisiesto' if is_leap else 'no bisiesto'}")
+def is_leap_year():
+    año= int(input("Ingrese un año: "))
+    is_leap = main(año)
+    if is_leap is True:
+        print(f"El año {año} es bisiesto")
+    else:
+        print(f"El año {año} no es bisiesto")
     return is_leap
